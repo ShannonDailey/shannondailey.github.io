@@ -1,32 +1,24 @@
-<!DOCTYPE html>
 <html>
 	<head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDFM7YJ2PV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BDFM7YJ2PV');
-</script>
-
 		<title>Shannon Egan-Dailey, PhD</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	</head>
-	<body>
 
-		<!-- Nav  -->
-			<nav id="nav">
-				<ul class="container">
-                    <li><a href="index.html">About</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="CV.html">CV</a></li>
-				</ul>
-			</nav>
+  <!-- shared head -->
+  <script>
+    fetch('/files/head.html')
+      .then(res => res.text())
+      .then(html => document.head.insertAdjacentHTML('afterbegin', html));
+  </script>
+</head>
+<body>
+  <!-- shared header/nav -->
+  <script>
+    fetch('/files/nav.html')
+      .then(res => res.text())
+      .then(html => document.body.insertAdjacentHTML('afterbegin', html));
+  </script>
 
+  <main>
+      
 		<!-- Home -->
 
 			<article id="top" class="wrapper style1">
@@ -38,7 +30,9 @@
 								<h1>Shannon Egan-Dailey, PhD</h1>
 							</header>
 
-                              <p></p>
+                              <p>Research Assistant Professor<br>
+                                Wheelock College of Education &amp; Human Development<br>
+                                  Boston University</p>
 
                         </div></div></div></article>
         <hr>
@@ -54,7 +48,9 @@
                     <img src="files/IMG_7288.png" width="200em" align="right">
                     
                     <p>Hi! I am a researcher specializing in early childhood language and cognitive development, particularly in the context of poverty.</p>
-                        
+                    
+                    <p>I am currently a Research Assistant Professor at Boston University in the Wheelock College of Education &amp; Human Development, where I am a part of the <a href="https://www.developingbelief.com">Developing Belief Network</a> working with Dr. Kathleen Corriveau.</p>
+                    
                     <p>I received my Bachelor's with honors in psychology from the University of Pennsylvania in 2015 and completed my PhD in developmental psychology at Duke University in 2022, advised by Dr. Elika Bergelson. I completed my postdoctoral training in the Sanford School of Public Policy at Duke University, where I worked on the <a href="https://www.babysfirstyears.com">Baby's First Years</a> project, advised by Dr. Lisa Gennetian.</p>
         
                     <p>I am a first-generation college student, originally from rural north-central Pennsylvania. Outside of the lab, I enjoy cooking, playing music, hanging out with my huskies Shuri and Korra, and complaining about how hot North Carolina is.</p>
@@ -73,26 +69,13 @@
                     <p>In my dissertation, I investigated the role of language input in children's language development by combining data from a corpus of recordings from infants' home environments, an eye-tracking study, and standardized lab assessments. In my postdoctoral work on Baby's First Years, I explored parenting and children's language and cognitive development in an unprecedented large sample of low-income, racially diverse young children and their families.</p>
             </div>
         </article>
-        <hr>
-
-        <!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<div class="row">
-
-						<div class="col-12" style="text-align: center;">
-                            
-                            <span style="font-size: 36px;"><a href="https://scholar.google.com/citations?user=QZtPL1oAAAAJ"><i class="fab fa-google"></i></a></span>
-                            
-							<span style="font-size: 36px;"><a href="http://github.com/ShannonDailey"><i class="fab fa-github"></i></a></span>
-  
-                            <span style="font-size: 36px;"><a href="http://linkedin.com/in/shannon-egan-dailey/"><i class="fa-brands fa-square-linkedin"></i></a></span>
-
-<br>
-                            <small>Design: Miniport by <a href="https://html5up.net">HTML5 UP</a></small>
-						</div>
-					</div>
-				</div>
-			</article>
+    </main>
+<!-- shared footer -->
+<script>
+  fetch('/files/footer.html')
+    .then(res => res.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
+        
     </body>
 </html>

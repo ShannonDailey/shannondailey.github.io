@@ -1,32 +1,23 @@
-<!DOCTYPE html>
 <html>
 	<head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDFM7YJ2PV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BDFM7YJ2PV');
-</script>
-
 		<title>Shannon Egan-Dailey | Publications</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	</head>
-	<body>
 
-		<!-- Nav  -->
-			<nav id="nav">
-				<ul class="container">
-                    <li><a href="index.html">About</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="CV.html">CV</a></li>
-				</ul>
-			</nav>
+  <!-- shared head -->
+  <script>
+    fetch('/files/head.html')
+      .then(res => res.text())
+      .then(html => document.head.insertAdjacentHTML('afterbegin', html));
+  </script>
+</head>
+<body>
+  <!-- shared header/nav -->
+  <script>
+    fetch('/files/nav.html')
+      .then(res => res.text())
+      .then(html => document.body.insertAdjacentHTML('afterbegin', html));
+  </script>
 
+  <main>
 
        <!-- Publications -->
         <article id="pubs" class="wrapper style2">
@@ -35,8 +26,8 @@
 					<header>
 						<h1>Publications</h1>
 					</header>
-                    <ul>
-                        <li>Kalenkovich, E., Koorathota, S.,Tor, S., Amatuni, A., <strong>Egan-Dailey, S.</strong>, Moore, C., Laing, C., Garrison, H., Baudet, G., Bulgarelli, F., Uner, S., Righter, L., &amp; Bergelson, E. (2025). A year of nouns from English-learning infants’ daily lives: the SEEDLingS-Nouns dataset. <i>Behavior Research Methods.</i>
+                  <ul>
+                        <li>Kalenkovich, E., Koorathota, S.,Tor, S., Amatuni, A., <strong>Egan-Dailey, S.</strong>, Moore, C., Laing, C., Garrison, H., Baudet, G., Bulgarelli, F., Uner, S., Righter, L., &amp; Bergelson, E. (2025). A year of nouns from English-learning infants' daily lives: the SEEDLingS-Nouns dataset. <i>Behavior Research Methods.</i>
                         [<a href="https://osf.io/preprints/psyarxiv/3a487_v1">pre-print</a>]
                         </li>
                         
@@ -58,7 +49,11 @@
                             [<a href="https://psyarxiv.com/ayx4b/">pre-print</a>] [<a href="https://osf.io/qkb6p/">OSF project</a>]
                             [<a href="https://github.com/ShannonDailey/talking_to_talkers_public">GitHub repo</a>]
                         </li>
-                            <ul><li>Media coverage: <a href="https://today.duke.edu/2022/12/parents-talk-more-toddlers-who-talk-back">Duke Today</a>, <a href="https://childandfamilyblog.com/talking-to-babies-babies-hear-more-talk-from-caregivers-once-they-begin-talking-themselves/">Child &amp; Family Blog</a>, <a href="https://www.usnews.com/news/health-news/articles/2022-12-05/girl-toddlers-have-bigger-vocabularies-and-researchers-now-know-why">US News &amp; World Report</a></li></ul>
+                      
+                      <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span>
+                                Media coverage: <a href="https://today.duke.edu/2022/12/parents-talk-more-toddlers-who-talk-back">Duke Today</a>, <a href="https://childandfamilyblog.com/talking-to-babies-babies-hear-more-talk-from-caregivers-once-they-begin-talking-themselves/">Child &amp; Family Blog</a>, <a href="https://www.usnews.com/news/health-news/articles/2022-12-05/girl-toddlers-have-bigger-vocabularies-and-researchers-now-know-why">US News &amp; World Report</a></li>
+                        </ul>
                         
                         <li><strong>Dailey, S.</strong>, &amp; Bergelson, E. (2022). Language input to infants of different socioeconomic statuses: A quantitative meta-analysis. <i>Developmental Science, 25</i>(3). doi: 10.1111/desc.13192
                             [<a href="https://onlinelibrary.wiley.com/doi/10.1111/desc.13192">paper</a>]
@@ -92,8 +87,12 @@
                         <strong>Egan-Dailey, S.</strong>, Gennetian, L. A., Duncan, G., Fox, N., Magnuson, K., Noble, K. G., &amp; Yoshikawa, H. (2024). Effects on maternal bandwidth of monthly unconditional cash starting at birth among U.S. families with low income. <i>SSRN Electronic Journal</i>. doi: 10.2139/ssrn.4940902 [<a href="https://ssrn.com/abstract=4940902">pre-print</a>]
                         </li>
                         
-                        <li>Noble, K., Magnuson, K., Duncan, G. D., Gennetian, L. A., Yoshikawa, H., Fox, N. A., Halpern-Meekin, S., Troller-Renfree, S. V., Han, S., <strong>Egan-Dailey, S.</strong>, Nelson, T. D., Nelson, J. M., Black, S., Georgieff, M., &amp; Karhson, D. (<i>Under review</i>). The effect of a monthly unconditional cash transfer on children’s development at four years of age: A randomized controlled trial in the U.S. [<a href="https://doi.org/10.31234/osf.io/udbt9">pre-print</a>]</li>
-                          <ul><li>Media coverage: <a href="https://www.nytimes.com/2025/07/28/us/politics/cash-payments-poor-families-child-development.html?smid=nytcore-android-share">New York Times</a></li></ul>
+                        <li>Noble, K., Magnuson, K., Duncan, G. D., Gennetian, L. A., Yoshikawa, H., Fox, N. A., Halpern-Meekin, S., Troller-Renfree, S. V., Han, S., <strong>Egan-Dailey, S.</strong>, Nelson, T. D., Nelson, J. M., Black, S., Georgieff, M., &amp; Karhson, D. (<i>Under review</i>). The effect of a monthly unconditional cash transfer on children's development at four years of age: A randomized controlled trial in the U.S. [<a href="https://doi.org/10.31234/osf.io/udbt9">pre-print</a>]</li>
+                        
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span>
+                                Media coverage: <a href="https://www.nytimes.com/2025/07/28/us/politics/cash-payments-poor-families-child-development.html?smid=nytcore-android-share">New York Times</a></li>
+                        </ul>
                         
                         <li>Flores-Peregrina, D., <strong>Egan-Dailey, S.</strong>, Awkward-Rich, L., Gennetian, L. A., Magnuson, K., Duncan, G., Yoshikawa, H., Fox, N., &amp; Noble, K. (<i>Under review.</i>) The impact of unconditional cash on parenting behaviors among 4-year-old children from families with low income in the U.S.</li>
 
@@ -103,23 +102,14 @@
             </div>
         </article>
         <hr />
-
-        <!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<div class="row">
-
-						<div class="col-12" style="text-align: center;">
-
-							<span style="font-size: 36px;"><a href="https://scholar.google.com/citations?user=QZtPL1oAAAAJ"><i class="fab fa-google"></i></a></span>
-                            
-							<span style="font-size: 36px;"><a href="http://github.com/ShannonDailey"><i class="fab fa-github"></i></a></span>
-  
-                            <span style="font-size: 36px;"><a href="http://linkedin.com/in/shannon-egan-dailey/"><i class="fa-brands fa-square-linkedin"></i></a></span>
-
-						</div>
-					</div>
-				</div>
-			</article>
+    </main>
+    
+    <!-- shared footer -->
+<script>
+  fetch('/files/footer.html')
+    .then(res => res.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
+    
     </body>
 </html>

@@ -1,69 +1,45 @@
-<!DOCTYPE html>
 <html>
 	<head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDFM7YJ2PV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BDFM7YJ2PV');
-</script>
-        
 		<title>Shannon Egan-Dailey | CV</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	</head>
-	<body>
 
-		<!-- Nav  -->
-			<nav id="nav">
-				<ul class="container">
-                    <li><a href="index.html">About</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="CV.html">CV</a></li>
-				</ul>
-			</nav>
-
-
-       <!-- Embedded CV -->
+  <!-- shared head -->
+  <script>
+    fetch('/files/head.html')
+      .then(res => res.text())
+      .then(html => document.head.insertAdjacentHTML('afterbegin', html));
+  </script>
+</head>
+<body>
+  <!-- shared header/nav -->
+  <script>
+    fetch('/files/nav.html')
+      .then(res => res.text())
+      .then(html => document.body.insertAdjacentHTML('afterbegin', html));
+  </script>
+<main>
+       
+    <!-- Embedded CV -->
         <article id="cv" class="wrapper style2">
 				<div class="container">
 					<br><br>
 					<header>
 						<h1>Curriculum Vitae</h1>
 					</header>
-
-							<!-- <object data="files/EganDailey_CV.pdf" width="100%" height="550">
-                                    alt :<a href="files/EganDailey_CV.pdf"></a>
-									</object> -->
                             
                     <iframe src="https://docs.google.com/viewer?url=http://shannondailey.github.io/files/EganDailey_CV.pdf&embedded=true" style="width:100%; height:650px;" frameborder="0"></iframe>
-
-                    
 
             </div>
         </article>
         <hr />
 
-        <!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<div class="row">
-
-						<div class="col-12" style="text-align: center;">
-
-							<span style="font-size: 36px;"><a href="https://scholar.google.com/citations?user=QZtPL1oAAAAJ"><i class="fab fa-google"></i></a></span>
-                            
-							<span style="font-size: 36px;"><a href="http://github.com/ShannonDailey"><i class="fab fa-github"></i></a></span>
-  
-                            <span style="font-size: 36px;"><a href="http://linkedin.com/in/shannon-egan-dailey/"><i class="fa-brands fa-square-linkedin"></i></a></span>
-
-						</div>
-					</div>
-				</div>
-			</article>
+    </main>
+    
+<!-- shared footer -->
+<script>
+  fetch('/files/footer.html')
+    .then(res => res.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
+    
     </body>
 </html>
